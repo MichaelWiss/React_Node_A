@@ -8,8 +8,13 @@ const app = express();
 
 passport.use(new GoogleStrategy({
 	clientID: keys.googleClientID,
-	googleClientSecret: keys.googleClientSecret
-  })
+	googleClientSecret: keys.googleClientSecret,
+	callbackURL: '/auth/google/callback'
+  }, 
+   accessToken => {
+      console.log(accessToken);
+   }
+  )
 );
 
 
