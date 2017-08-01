@@ -14,6 +14,8 @@ passport.use(
 	  callbackURL: '/auth/google/callback'
   }, 
    (accessToken, refreshToken, profile, done) => {
+      User.findOne({ })
+      
       new User({ googleId: profile.id }).save();
    }
   )
