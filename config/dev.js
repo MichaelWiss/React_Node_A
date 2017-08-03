@@ -8,9 +8,3 @@ module.exports = {
 };
 
 
-module.exports = {
-	googleClientID: '363287999405-2dtq3glkgr8dvmgmf1p6iqkn99j2eqo5.apps.googleusercontent.com',
-	googleClientSecret: 'IUJU0ai3_dyD4369ZQ2EVo-P',
-	mongoURI:
-	cookieKey:
-}
