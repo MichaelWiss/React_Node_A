@@ -5,7 +5,9 @@ import { createStore, applyMiddleware } from 'redux';
 
 import App from './components/App';
 
+const store = createStore(() => [], {}, applyMiddleware());
+
 ReactDOM.render(
-  <App />,
+	<Provider store={store}><App /></Provider>,
   document.querySelector('#root')
 );
