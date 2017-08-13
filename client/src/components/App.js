@@ -7,7 +7,12 @@ const SurveyNew = () => <h2>SurveyNew</h2>
 const Landing = () => <h2>Landing</h2>
 
 class App extends Component {
-	return (
+	componentDidMount() {
+
+	}
+	
+	render (
+	 return (
        <div className="container">
          
         <BrowserRouter>
@@ -20,6 +25,7 @@ class App extends Component {
         </BrowserRouter>
 
        </div>
+      );
     );
 };
 
