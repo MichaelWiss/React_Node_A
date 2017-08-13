@@ -31,4 +31,4 @@ class App extends Component {
     );
 };
 
-export default connet(null, actions)(App);
+export default connect(null, actions)(App);
