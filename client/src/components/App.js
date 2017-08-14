@@ -13,7 +13,7 @@ class App extends Component {
     this.props.fetchUser();
 	}
 
-	render (
+	render () {
 	 return (
        <div className="container">
          
@@ -27,8 +27,8 @@ class App extends Component {
         </BrowserRouter>
 
        </div>
-      );
     );
-};
+   }
+}
 
 export default connect(null, actions)(App);
