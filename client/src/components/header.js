@@ -2,6 +2,15 @@ import React, { Component } from 'react';
 import { connect } from 'react-redux';
 
 class Header extends Component {
+	renderContent() {
+       switch (this.props.auth) {
+       	case null:
+
+       	case false:
+
+       	default
+       }
+	}
 	render() {
 		console.log(this.props);
 		return (
