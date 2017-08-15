@@ -5,10 +5,11 @@ class Header extends Component {
 	renderContent() {
        switch (this.props.auth) {
        	case null:
-
+           return 'Still deciding';
        	case false:
-
-       	default
+           return 'Im loggedout';
+       	default:
+       	   return 'im logged in';
        }
 	}
 	render() {
@@ -20,9 +21,7 @@ class Header extends Component {
 		      Emaily
 		    </a>
 		    <ul className="right">
-		       <li>
-		          <a>Login With Google</a>
-		       </li>
+		      {this.renderContent()}
 		    </ul>
 		  </div>
 		</nav>
