@@ -5,7 +5,9 @@ class Payments extends Component {
 	render() {
 		return (
           <StripeCheckout 
-            amount={}
+            amount={500}
+            token={token => console.log(token)}
+            stripeKey={}
             />
 		);
 	}
