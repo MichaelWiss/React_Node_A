@@ -12,6 +12,7 @@ module.exports = app => {
         title,
         subject,
         body,
+        recipients: recipients.split(',').map(email => { return { email: email}})
      });
   });
 };
