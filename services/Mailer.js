@@ -37,7 +37,7 @@ class Mailer extends helper.Mail {
     	this.recepients.forEach(recipient => {
     		personalize.addTo(recipient);
     	});
-    	this.adPersonalization(personalize);
+    	this.addPersonalization(personalize);
     }
 
     async send() {
