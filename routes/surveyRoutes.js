@@ -19,12 +19,15 @@ module.exports = app => {
         dateSent: Date.now()
      });
 
-     try{
-     const mailer = new Mailer(survey, surveyTemplate(survey));
+    
+    const mailer = new Mailer(survey, surveyTemplate(survey));
+
+
+    try {
      await mailer.send();
      await survey.save();
      req.user.credits -= 1;
-     const user = await req.use.save();
+     const user = await req.user.save();
 
      res.send(user);
     } catch (err) {
