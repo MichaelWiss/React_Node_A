@@ -19,6 +19,7 @@ module.exports = app => {
         dateSent: Date.now()
      });
 
+     try{
      const mailer = new Mailer(survey, surveyTemplate(survey));
      await mailer.send();
      await survey.save();
@@ -26,7 +27,8 @@ module.exports = app => {
      const user = await req.use.save();
 
      res.send(user);
-
-
-  });
+    } catch (err) {
+        res.status(422).send(err);
+    }
+   });
 };
