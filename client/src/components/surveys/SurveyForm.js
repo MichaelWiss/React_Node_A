@@ -11,4 +11,6 @@ class SurveyForm extends Component {
 	}
 } 
 
-export default SurveyForm;		
+export default reduxForm({
+	form: 'surveyForm'
+})(SurveyForm);		
