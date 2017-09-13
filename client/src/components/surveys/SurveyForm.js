@@ -5,7 +5,11 @@ class SurveyForm extends Component {
 	render() {
 		return (
 			<div>
-			  SurveyForm!
+			  <Field
+			    type="text"
+			    name="surveyTitle"
+			    component="input"
+			 /> 
 			</div>    
 	   );		
 	}
