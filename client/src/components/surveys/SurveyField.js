@@ -1,9 +1,10 @@
 import React from 'react';
 
-export default () => {
+export default (props) => {
+	console.log(props.input);
 	return (
       <div>
-        SurveyField
+        <input />
       </div>  
      );
  };    
