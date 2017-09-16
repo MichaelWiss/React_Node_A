@@ -1,7 +1,6 @@
 import React from 'react';
 
-export default ({input}) => {
-	console.log(props.input);
+export default ({ input }) => {
 	return (
       <div>
         <input />
