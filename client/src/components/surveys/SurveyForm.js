@@ -1,3 +1,4 @@
+import _ from 'lodash';
 import React, { Component } from 'react';
 import { reduxForm, Field } from 'redux-form';
 import SurveyField from './SurveyField';
@@ -11,36 +12,10 @@ const FIELDS = [
 
 class SurveyForm extends Component {
 	renderFields() {
-        return(
-        	<div>
-        	  <Field 
-        	    label="Survey Title" 
-        	    type="text" 
-        	    name="title" 
-        	    component={SurveyField} 
-        	  />
-        	  <Field 
-        	    label="Survey Line" 
-        	    type="text" 
-        	    name="subject" 
-        	    component={SurveyField} 
-        	  />
-        	   <Field 
-        	    label="Email Body" 
-        	    type="text" 
-        	    name="body" 
-        	    component={SurveyField} 
-        	    />
-        	    <Field 
-        	    label="Recipient List" 
-        	    type="text" 
-        	    name="emails" 
-        	    component={SurveyField} 
-        	    />
-        	</div>
-        );
+         
     
 	}
+
 	render() {
 		return (
 			<div>
