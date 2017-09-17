@@ -12,7 +12,9 @@ const FIELDS = [
 
 class SurveyForm extends Component {
 	renderFields() {
-         
+        return _.map(FIELDS, ({ label, name })=> {
+          return <Field component={SurveyField} type="text" label={field.label}/>
+        });  
     
 	}
 
