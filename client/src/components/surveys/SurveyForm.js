@@ -40,6 +40,11 @@ class SurveyForm extends Component {
 	}
 } 
 
+function validate(values) {
+   
+}
+
 export default reduxForm({
+	validate,
 	form: 'surveyForm'
 })(SurveyForm);		
