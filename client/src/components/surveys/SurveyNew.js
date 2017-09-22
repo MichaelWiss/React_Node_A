@@ -9,12 +9,14 @@ class SurveyNew extends Component {
 		if (this.state.showReviewForm === true) {
             return <SurveyReviewForm />;
 		}
+
+		return <SurveyForm />;
 	}
 
 	render() {
 		return (
 			<div>
-			  <SurveyForm />
+			  {this.renderContent()}
 			</div>    
 	   );		
 	}
