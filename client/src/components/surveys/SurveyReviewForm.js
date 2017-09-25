@@ -9,14 +9,7 @@ const SurveyReviewForm = ({ onCancel, formValues }) => {
            <label>Survey Title</label>
            <div>{formValues.title}</div>
          </div>
-         <div>
-           <label>Survey Line</label>
-           <div>{formValues.subject</div>
-         </div>
-         <div>
-           <label>Email Body</label>
-           <div>{formValues.body}</div>
-         </div>
+         
          <button
            className="yellow darken-3 btn-flat"
            onClick={onCancel}
