@@ -15,4 +15,11 @@ const SurveyReviewForm = ({ onCancel }) => {
 		);
 };
 
-export default SurveyReviewForm;
+function mapStateToProps(state) {
+	   console.log(state);
+       return {
+         formValues: stateform.surveyForm.values
+       };
+}
+
+export default connect(mapStateToProps)(SurveyReviewForm);
